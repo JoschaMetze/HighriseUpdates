@@ -1,0 +1,13 @@
+{
+  "files":[
+    "dist/*",
+    "dist/plugins/*"
+  ],
+  "main": "dist/jquery.jqplot",
+  "shim": {
+    "dist/jquery.jqplot": {
+      "exports": "$"
+    }
+  }
+
+}

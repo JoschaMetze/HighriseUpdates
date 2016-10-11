@@ -1,0 +1,30 @@
+<template>
+  <div class="container">
+    <div class="row">
+      <div class="col s4 offset-s5">
+  <md-card >
+    <div>
+  <form method="post"  name="loginForm">
+    <div class="row">
+    <md-input md-type="email" class="col s10 offset-s1" md-label="Nutzername" md-validate="true" md-validate-error="Ungültige Emailadresse" md-value.bind="email">
+      <i md-prefix class="material-icons">person_outline</i>
+    </md-input><br />
+    </div>
+    <div class="row">
+    <md-input md-type="password" class="col s10 offset-s1" md-label="Passwort" md-value.bind="password">
+      <i md-prefix class="material-icons">lock_outline</i>
+    </md-input><br />
+</div>
+
+    <div class="row">
+    <button md-button="large: true;" class="col s10 offset-s1" click.delegate="login()">Login</button>
+      </div>
+
+  </form>
+
+      </div>
+  </md-card>
+        </div>
+    </div>
+  </div>
+</template>

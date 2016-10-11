@@ -1,0 +1,48 @@
+<template>
+  <require from="../converter/pagination"></require>
+  <require from="../converter/sort"></require>
+  <require from="../converter/date-format"></require>
+  <require from="../converter/status"></require>
+  <section class="au-animate">
+    <div class="container">
+      <div class="row">
+
+      <div class="form-group">
+        <input type="text" value.bind="filters[0].value" placeholder="Filtern" class="form-control"/>
+      </div>
+        </div>
+      <div class="row">
+        <table class="table table-striped" aurelia-table="data.bind: updates | sort:{propertyName:'letzterKommentarAm',direction:'descending'}; display-data.bind: $displayData; filters.bind: filters">
+          <thead>
+          <tr>
+            <th aut-sort="key: name">Name</th>
+            <th aut-sort="key: letzterKommentarAm;default:desc">Letzter Kommentar am</th>
+            <th aut-sort="key: firmenName">Firmenname</th>
+            <th aut-sort="key: ansprechpartner">Ansprechpartner</th>
+            <th aut-sort="key: haeufigkeit">Häufigkeit</th>
+            <th>Aktualisiert</th>
+            <th aut-sort="key: status">Status</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr repeat.for="party of $displayData">
+            <td>
+              ${party.name}
+            </td>
+            <td md-tooltip="position: top; text.bind: party.letzterKommentar;html: true;">${party.letzterKommentarAm|dateFormat:'LLLL'}
+            </td>
+            <td>${party.firmenName}</td>
+            <td>${party.ansprechpartner}</td>
+            <td>${party.haeufigkeit}</td>
+            <td>${party.aktualisiert|dateFormat:'LLLL'}</td>
+            <td><i class="small material-icons ${party.status |status:'true'}">${party.status |status}</i></td>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+
+      </div>
+    </div>
+  </section>
+</template>
+

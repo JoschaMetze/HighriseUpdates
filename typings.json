@@ -1,0 +1,27 @@
+{
+  "name": "aurelia-skeleton-navigation-typescript-webpack",
+  "version": false,
+  "devDependencies": {
+    "jsurl": "file:my_typings/jsurl/index.d.ts",
+    "store": "file:my_typings/store/index.d.ts",
+    "webpack": "registry:npm/webpack#1.12.9+20160418172948"
+  },
+  "globalDependencies": {
+    "bluebird": "registry:dt/bluebird#3.0.0+20160811111256",
+    "clipboard": "registry:dt/clipboard#1.5.9+20160316155526",
+    "filesaver": "registry:dt/filesaver#0.0.0+20160622185141",
+    "highcharts/highstock": "registry:dt/highcharts/highstock#2.1.5+20160316155526",
+    "lodash": "registry:global/lodash#4.0.0+20160723033700",
+    "nprogress": "registry:dt/nprogress#0.0.0+20160316155526",
+    "require": "registry:dt/require#2.1.20+20160316155526",
+    "whatwg-fetch": "registry:dt/whatwg-fetch#0.0.0+20160524142046"
+  },
+  "globalDevDependencies": {
+    "highcharts": "registry:dt/highcharts#4.1.9+20160316155526",
+    "jasmine": "registry:dt/jasmine#2.2.0+20160412134438",
+    "jquery": "registry:dt/jquery#1.10.0+20160417213236",
+    "lodash": "registry:global/lodash#4.0.0+20160723033700",
+    "materialize-css": "registry:dt/materialize-css#0.97.5+20160317120654",
+    "selenium-webdriver": "github:DefinitelyTyped/DefinitelyTyped/selenium-webdriver/selenium-webdriver.d.ts#24e12a7af994afa2226af70fbfae0adc78736a9e"
+  }
+}
