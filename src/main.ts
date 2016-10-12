@@ -33,7 +33,7 @@ export async function configure(aurelia: Aurelia) {
     })
     .plugin('aurelia-api', config => {
       config
-        .registerEndpoint('highriseUpdate', 'http://localhost:63730/api/')
+        .registerEndpoint('highriseUpdate', 'http://localhost:63735/api/')
         .setDefaultEndpoint('highriseUpdate');
     })
     .plugin('aurelia-table')

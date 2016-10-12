@@ -35,6 +35,7 @@ export class UpdateService {
     if (!this.isConfigured) {
       return this.httpClient.fetch('configuration/settings.json').then(response =>response.json()).then(jsonResponse=> {
         self.apiConfig.registerEndpoint('highriseUpdate', jsonResponse.apiPath);
+        self.apiConfig.setDefaultEndpoint('highriseUpdate');
         self.highriseRepository = self.entityManager.getRepository('latestupdates');
 
         /*self.httpClient.configure((httpConfig)=> {
