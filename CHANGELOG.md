@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.1.0"></a>
+# 0.1.0 (2016-10-12)
+
+
+### Bug Fixes
+
+* **package:** fix webpack version ([6107a8f](https://github.com/Hochfrequenz/highrise/commit/6107a8f))
+
+
+### Features
+
+* **all:** initial release ([4165cf1](https://github.com/Hochfrequenz/highrise/commit/4165cf1))
+
+
+
 <a name="0.6.3"></a>
 ## [0.6.3](https://github.com/Hochfrequenz/ZRVis/compare/v0.6.2...v0.6.3) (2016-08-22)
 
