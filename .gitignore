@@ -6,7 +6,6 @@ bower_components
 /dist
 /export
 export
-build
 build/reports
 coverage
 .awcache/

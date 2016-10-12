@@ -1,0 +1,62 @@
+{
+  "bundles": {
+    "dist/app-build": {
+      "includes": [
+        "[**/*.js]",
+        "**/*.html!text",
+        "*.css!text"
+      ],
+      "options": {
+        "inject": true,
+        "minify": true,
+        "depCache": true,
+        "rev": true
+      }
+    },
+    "dist/aurelia": {
+      "includes": [
+        "aurelia-framework",
+        "aurelia-bootstrapper",
+        "aurelia-fetch-client",
+        "aurelia-router",
+        "aurelia-animator-css",
+        "aurelia-templating-binding",
+        "aurelia-templating-resources",
+        "aurelia-templating-router",
+        "aurelia-loader-default",
+        "aurelia-history-browser",
+        "aurelia-logging-console",
+        "aurelia-dialog",
+        "aurelia-dialog/**/*.html!text",
+        "aurelia-dialog/**/*.css!text",
+        "bootstrap",
+        "bootstrap/css/bootstrap.css!text",
+        "fetch",
+        "lodash",
+        "jquery",
+        "moment",
+        "moment/locale/de.js",
+        "filesaverjs",
+        "highcharts",
+        "highcharts/highstock*.js",
+        "typeahead",
+        "jsurl",
+        "clipboard",
+        "aurelia-materialize-bridge",
+        "aurelia-materialize-bridge/**/*.js",
+        "aurelia-materialize-bridge/**/*.html!text",
+        "aurelia-materialize-bridge/**/*.css!text",
+        "text",
+        "css",
+        "store",
+        "dragula",
+        "dragula/**/*.css!text"
+      ],
+      "options": {
+        "inject": true,
+        "minify": true,
+        "rev": true
+      }
+    }
+  }
+}
